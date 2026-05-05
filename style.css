@@ -1,0 +1,447 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+:root {
+    --primary-color: #171929;
+    --secondary-color: #171727;
+    --third-color: #535b97;
+    --fourth-color: #535b9714;
+    --third-color-hover: #535b9731;
+    --third-color-transparent: #535b9714;
+    --novel-color: rgb(70, 189, 242);
+    --cerita-rakyat-color: #649348;
+    --manga: #E03259;
+    --manhwa: #E5642E;
+}
+
+body {
+    background-color: var(--primary-color);
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.sidebar {
+    width: 16rem;
+    padding: 1rem;
+    height: 100vh;
+    background-image: 
+        linear-gradient(to top, rgba(0,0,0,0.0)10%, var(--secondary-color) 50%),
+        url("img/bg/sidebar3.jpeg");
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.sidebar-title .sidebar-logo i {
+    font-size: 3rem;
+}
+.sidebar-title .sidebar-deskripsi p{
+    font-size: .8rem;
+    margin-left: .2rem;
+}
+
+.sidebar-title .sidebar-deskripsi {
+    margin-top: -.9rem;
+    font-size: .93rem;
+}
+.sidebar-title {
+    display: flex;
+    margin: 0 auto ;
+    padding-bottom: .5rem;
+    display: flex;
+    align-items: center;
+    gap: .9rem;
+    border-bottom: 1px solid var(--third-color);
+}
+
+.sidebar ul {
+    margin-top: 1rem;
+    list-style: none;
+}
+
+.sidebar ul li i {
+    font-size: 1.5rem;
+}
+.sidebar ul li {
+    padding: 1rem .5rem 1rem 1rem;
+    display: flex;
+    gap: 1rem;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+.sidebar ul li:hover {
+    background-color: #ffffff2a;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.sidebar ul li {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.container{
+    width: 60rem;
+    margin: 2rem 0 0 18rem;
+}
+
+.second-container {
+    width: 100%;
+    padding-right: 2rem;
+}
+
+.hero {
+    width: 100%;
+        background-image: 
+        linear-gradient(to left, rgba(0,0,0,0.0), var(--secondary-color) 90% ),
+        url("img/bg/sidebar\ img.jpeg");
+    background-position: center;
+    background-color: white;
+    height: 15rem;
+    display: flex;
+    border: 1px solid var(--third-color);
+    box-shadow: 0 10px 7px 1px var(--third-color-transparent);
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.hero .hero-text {
+    margin-right: auto ;
+    padding-left: 1.5rem;
+}
+
+.hero .hero-text h1 {
+    margin-bottom: .5rem;
+    font-size: 2.5rem;
+}
+.kategori-buku {
+    margin: 1.5rem 0;
+}
+.kategori-buku p {
+    font-size: 1.3rem;
+}
+
+.kategori-kanan a{
+    padding: .6rem;
+    border: 1px solid var(--third-color-hover);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.kategori-nav {
+    display: flex;
+    justify-content: space-between;
+    margin: .5rem 0 1.1rem 0;
+}
+
+.kategori-kiri p{
+    font-size: 1.2rem;
+}
+
+.kategori-kiri{
+    display: flex;
+    gap: .5rem;
+    align-items: center ;
+}
+.kategori-card-wrapper {
+    display: flex;
+    gap: 1.5rem;
+}
+.kategori-card::before{
+    content: '';
+    position: absolute;
+    background-image: radial-gradient( rgba(0,0,0,0.0)70%, rgba(9, 15, 40, 0.6) 100% ), url(img/manga/anime.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter:brightness(.7);
+    -webkit-filter:brightness(.7);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.novel {
+    background-size: cover;
+    background-position: center;
+    background-image: radial-gradient( rgba(0,0,0,0.0)50%, rgba(9, 15, 40, 0.6) 100% ),        url("img/novel/dilan.jpeg");
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.cerita-rakyat {
+    background-size: cover;
+    background-position: center;
+    background-image: radial-gradient( rgba(0,0,0,0.0)50%, rgb(9, 15, 40) 100% ),        url("img/cerita-rakyat/malin-kundang.jpeg");
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.manhwa {
+    background-size: cover;
+    background-position: center;
+    background-image: radial-gradient( rgba(0,0,0,0.0)30%, rgb(9, 15, 40) 100% ),        url("img/manhwa/solo-leveling.jpeg");
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.kategori-card {
+    flex: 1;
+    position: relative;
+    aspect-ratio: 3/2.5;
+}
+
+.card-judul {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    padding: .5rem 0 0 1rem;
+}
+
+.card-judul p {
+    font-size: 1.4rem;
+}
+
+.deskripsi-judul-card p{
+    font-size: .85rem;
+}
+
+.arrow{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
+
+.arrow i{
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.316);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.koleksi-wrapper {
+    display: flex;
+    gap: 1rem;
+}
+.koleksi-wrapper-second {
+    flex:1;
+}
+
+.koleksi-wrapper-second .koleksi-card {
+    width: 100%;
+}
+
+.koleksi-card {
+    width: 13rem;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--third-color-hover);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.koleksi-card img {
+    aspect-ratio: 9/14;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.koleksi-deskripsi p {
+    margin: .8rem 0;
+}
+.koleksi-deskripsi {
+    padding: .7rem;
+}
+
+.koleksi-deskripsi button {
+    border: none;
+    padding: .2rem .5rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.koleksi-deskripsi button.novel-button {
+    background-color: var(--novel-color);
+}
+
+.koleksi-deskripsi button.cerita-rakyat-button {
+    background-color: var(--cerita-rakyat-color);
+}
+
+.koleksi-deskripsi button.manga-button {
+    background-color: var(--manga);
+}
+
+.koleksi-deskripsi button.manhwa-button {
+    background-color: var(--manhwa); 
+}
+
+.rightside {
+    width: 100%;
+    padding: 2rem 1rem 0 ;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.admin-card, .anggota-wrapper {
+    width: 100%;
+    background: linear-gradient(to left top, var(--secondary-color), var(--third-color-hover));
+    border: 1px solid var(--third-color);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: 1.5rem 1rem;
+    align-items: center;
+}
+
+.anggota-wrapper {
+    border: 1px solid var(--third-color);
+}
+.admin-title {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+}
+.admin-card img {
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.anggota-title {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem 0 0 1rem;
+}
+
+.anggota-wrapper {
+    align-items: start;
+    padding: 0 0 1.5rem 0;
+    position: sticky;
+    top: 2rem;
+}
+
+.anggota-wrapper img{
+    width: 4rem;
+    height: 4rem;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.nama-anggota {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.nama-anggota img{
+    width: .9rem;
+    height: .9rem;
+}
+
+.anggota-card {
+    display: flex;
+    width: 93%;
+    margin: 0 auto;
+    align-items: center;
+    gap: 1rem;
+    border: 2px solid var(--third-color-hover);
+    border-radius: 15px;
+    padding: .5rem;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.anggota-card-deskripsi  {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    font-size: 1.1rem;
+}
+
+
+.anggota-card-deskripsi p{
+    font-size: .8rem;
+    font-weight: 600;
+}
+.active-logo img {
+    width: 1rem;
+    height: 1rem;
+    object-fit: cover;
+}
+
+.hidden {
+    display: none;
+}
+
