@@ -7,15 +7,19 @@
 
 :root {
     --primary-color: #171929;
+    --fifth-color: #111929;
     --secondary-color: #171727;
+    --sixth-color: #171722;
     --third-color: #535b97;
     --fourth-color: #535b9714;
+    --seventh-color: #15162138;
     --third-color-hover: #535b9731;
     --third-color-transparent: #535b9714;
     --novel-color: rgb(70, 189, 242);
     --cerita-rakyat-color: #649348;
     --manga: #E03259;
     --manhwa: #E5642E;
+    --blue-text : #5da1ff;
 }
 
 body {
@@ -23,6 +27,7 @@ body {
     display: flex;
     margin-bottom: 2rem;
 }
+
 
 .sidebar {
     width: 16rem;
@@ -262,10 +267,14 @@ a {
 
 .koleksi-wrapper {
     display: flex;
-    gap: 1rem;
+    gap: 1rem;  
 }
 .koleksi-wrapper-second {
     flex:1;
+}
+.koleksi-wrapper-second a {
+  display: block; 
+  width: 100%;
 }
 
 .koleksi-wrapper-second .koleksi-card {
@@ -273,7 +282,7 @@ a {
 }
 
 .koleksi-card {
-    width: 13rem;
+    width: 10rem;
     background-color: var(--secondary-color);
     border: 1px solid var(--third-color-hover);
     border-radius: 10px;
@@ -300,31 +309,34 @@ a {
     padding: .7rem;
 }
 
-.koleksi-deskripsi button {
+.koleksi-deskripsi button, .card-kanan button, .button-grup {
     border: none;
     padding: .2rem .5rem;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+    border-radius: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
-.koleksi-deskripsi button.novel-button {
+ button.novel-button {
     background-color: var(--novel-color);
 }
 
-.koleksi-deskripsi button.cerita-rakyat-button {
+ button.cerita-rakyat-button {
     background-color: var(--cerita-rakyat-color);
 }
 
-.koleksi-deskripsi button.manga-button {
+ button.manga-button {
     background-color: var(--manga);
 }
-
-.koleksi-deskripsi button.manhwa-button {
+ button.manhwa-button {
     background-color: var(--manhwa); 
 }
 
+
+
+/* $rightside section */
 .rightside {
     width: 100%;
     padding: 2rem 1rem 0 ;
@@ -354,7 +366,7 @@ a {
 }
 .admin-title {
     display: flex;
-    align-items: center;
+    align-items: center;    
     gap: .5rem;
     margin-right: auto;
     margin-bottom: 1.5rem;
@@ -445,3 +457,178 @@ a {
     display: none;
 }
 
+.buku-personal-wrapper {
+    background-color: var(--fourth-color);
+    border-top:2px solid var(--third-color-hover);
+    border-left:1px solid var(--third-color-hover);
+    border-right:1px solid var(--third-color-hover);
+    box-shadow: 0 3px 30px 1px var(--third-color-transparent);
+    width: auto;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.buku-personal-wrapper .button-header {
+    padding: .6rem .9rem;
+    margin: 1rem 0 1rem 1rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.buku-personal-wrapper .button-header a {
+    display: flex;
+    gap: .4rem;
+}
+
+.buku-personal-wrapper .button-header {
+    width: 100%;
+    padding: 1rem;
+}
+
+.personal-card, .buku-personal-bawah-content   {
+    display: flex;
+    margin: 1rem 2rem ;
+    padding: 1.5rem ;
+    border-radius: 13px;
+    height: auto;
+    background-color: var(--seventh-color);
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    border: 1.5px solid var(--third-color-hover);
+    -o-border-radius: 13px;
+}
+
+.personal-card .img {
+    width: 15rem;
+}
+
+.personal-card .img img {
+    width: 100%;
+    aspect-ratio: 2.2/3;
+    object-fit: cover;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border: 1px solid var(--third-color);
+    box-shadow: 0 5px 10px 2px var(--third-color-hover);
+}
+.personal-card .card-kanan {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-kanan-atas {
+    display: flex;
+    height: auto;
+    align-items: flex-start ;
+}
+
+.card-kanan-atas-kanan {
+    width: 20rem;
+    background-color: var(--third-color-transparent);
+    padding: 2rem 1.5rem;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;    
+    -o-border-radius: 15px;
+}
+
+.card-kanan-atas-title {
+    display: flex;
+    gap: .6rem;
+}
+
+.card-kanan-atas-kanan span {
+    font-size: .6rem;
+}
+
+.card-kanan-atas-kiri {
+    padding:0 2rem;
+}
+.card-kanan-atas-kiri h1 {
+    margin: 1rem 0;
+}
+
+.card-kanan-atas-kanan .status {
+    margin-bottom: .5rem;
+}
+
+.blue-text {
+    color: var(--blue-text);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--third-color-hover);
+}
+
+.card-kanan-bawah {
+    position: relative;
+    padding: 0 0 0 2rem;
+    display: flex;
+    gap: 1rem;
+
+}
+.card-kanan-bawah button {
+    font-size: 1.1rem;
+    padding: 1rem ;
+    background-color: transparent;
+    border: 1px solid var(--third-color);
+    border-radius:12px;
+    -webkit-border-radius:12px;
+    -moz-border-radius:12px;
+    -ms-border-radius:12px;
+    -o-border-radius:12px;
+    flex: 1;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    gap: .7rem;
+}
+
+.card-kanan-bawah button:first-child, .card-kanan-bawah button:last-child {
+    background-color: var(--third-color);
+}
+
+.buku-personal-bawah {
+    padding-bottom: 3rem;
+}
+.buku-personal-bawah-content {
+    flex-direction: column;
+}
+
+.buku-personal-bawah-title {
+    margin: 2rem 0 0 2rem;
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+.buku-personal-bawah-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bpb-kiri {
+    display: flex;
+    gap: 1rem;
+}
+
+
+.bpb-kanan {
+    gap: .3rem ;
+    display: flex;
+    align-items: center;
+}
+
+.bpb-kanan i {
+    font-size: .8rem;
+    padding-top: .2rem;
+}
